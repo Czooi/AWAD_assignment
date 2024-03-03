@@ -20,6 +20,9 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
+// This is added by siyu for testing purpose
+Route::get();
+
 Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
